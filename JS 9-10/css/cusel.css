@@ -1,0 +1,13 @@
+.section select {
+	width: 100%;
+	padding: 5px 5px;
+	border-radius: 7px 0px;
+	background-color: #00afe6;
+	color: white;
+}
+
+.section select option {
+	font-size: 12px;
+	background-color: #d4d6d7;
+	color: black;
+}

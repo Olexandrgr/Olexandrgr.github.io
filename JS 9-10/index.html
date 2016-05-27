@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS 9-10</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>    <!-- <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cusel.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/customCheckbox.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/polaris.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/cusel.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/icheck.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+          
+          <div class="section">
+            <select>
+          		<option selected="selected" value="">Виберіть Ваше місто...</option>
+          		<option value="4">Львів</option>
+          		<option value="5">Київ</option>
+          		<option value="6">Житомир</option>
+          		<option value="7">Костопіль</option>
+          		<option value="8">Рівне</option>
+          		<option value="9">Харків</option>
+          		<option value="10">інше...</option>
+            </select>
+            
+          </div>
+          
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/1.jpg" width="400" height="200" alt=""></li>
+                        <li><img src="img/2.jpg" width="400" height="200" alt=""></li>
+                        <li><img src="img/3.jpg" width="400" height="200" alt=""></li>
+                        <li><img src="img/4.jpg" width="400" height="200" alt=""></li>
+                        <li><img src="img/5.jpg" width="400" height="200" alt=""></li>
+                        <li><img src="img/6.jpg" width="400" height="200" alt=""></li>
+                    </ul>
+                </div>
+
+                <p class="photo-credits">
+                    Made by <a href="https://github.com/Olexandrgr">Olexandr Hrushkevych</a>
+                </p>
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+            
+            <div class="footer">
+          
+              <div class="box1">
+                
+                <h2>iCheck Plug-in</h2>
+                
+                <div>              
+                  <input type="checkbox" name="input1">
+                  <label for="input1">Name 1</label>
+                </div>
+                  
+                <div>
+                  <input type="checkbox" name="input2">
+                  <label for="input2">Name 2</label>
+                </div>
+                  
+                <div>
+                  <input type="checkbox" name="input3" checked>
+                  <label for="input3">Name 3</label>
+                </div>
+                  
+                <div>
+                  <input type="checkbox" name="input4" disabled="disable">
+                  <label for="input4">Name 4</label>
+                </div>
+                
+              </div>
+              
+              <div class="box2">
+                <h2>Custom CSS Checkbox</h2>
+                
+                  <div>
+                    <input type="checkbox" id="test-check1" />
+                    <label for="test-check1">Name 1</label>
+                  </div>
+                    
+                  <div>
+                    <input type="checkbox" id="test-check2" />
+                    <label for="test-check2">Name 2</label>
+                  </div>
+                    
+                  <div>
+                    <input type="checkbox" id="test-check3" checked/>
+                    <label for="test-check3">Name 3</label>
+                  </div>
+                    
+                  <div>
+                    <input type="checkbox" id="test-check4" disabled="disable"/>
+                    <label for="test-check4">Name 4</label>
+                  </div>
+                
+              </div> 
+              
+              
+              
+              
+              
+              
+              
+            </div>               
+        </div>
+        
+        <script>
+            $(document).ready(function(){
+              $('input').iCheck({
+                checkboxClass: 'icheckbox_polaris',
+                radioClass: 'iradio_polaris',
+                increaseArea: '-10%' // optional
+              });
+            });
+        </script>
+</html>
