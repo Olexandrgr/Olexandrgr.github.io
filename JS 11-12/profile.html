@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/template-main.js"></script>
+
+  </head>
+    <body>
+      <script type="text/template" id="test">
+          <div class="page">
+            <div class="box">
+              <p class="header_text"> <%= fio %> </p>
+
+              <div class="fig"><img class="alex_img" src=<%= photo %> alt="Фото" title="Photo"></div>
+
+              <p><%= info %></p>
+              <hr>
+              <p>Хочу вчити фронтенд тому що:</p>
+              <ul>
+              <%  for (var i = 0; i < reason.length; i++) { %>
+                <li> <%= reason[i] %> </li>
+              <% } %>
+              </ul>
+              <hr>
+              <p>Мій номер телефону</p>
+              <p> <%= phone %> </p>
+              <p class="shift">&nbsp;</p>
+              <p>Мій профіль вк</p>
+              <p><a href=<%= vkontakte %> target="_blank">vk.com</a></p>
+              <hr>
+              <p>Фідбек</p>
+              <p> <%= feadback %> </p>
+            </div>
+          </div>
+      </script>
+    </body>
+</html>
