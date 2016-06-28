@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS13-14</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+			
+	<div class="wrapper">
+		<script type="text/template" id="test">
+				<h3 class="text-center"><%= header %></h3>
+				<form href="#" method="POST">
+					                <% for (var i = 0; i < questions.length; i++) { %>
+	                <div>
+	                    <h4><%= (i+1) + '. ' + questions[i].title %></h4>
+	                    <% for (var j = 0; j < questions[i].answers.length; j++) { %>
+	                        <div class="radio">
+	                            <input type="radio"
+	                            name="<%= questions[i].radioname %>"
+	                            id="<%= questions[i].id[j] %>" />
+	                            <label for="<%= questions[i].id[j] %>">
+	                            <%= questions[i].answers[j] %></label>
+	                        </div>
+	                    <% }; %>
+	                </div>
+	                <% }; %>
+			
+					<div class="button-wrapper">
+						<button class="btn btn-default"><%= submit %></button>
+					</div>
+				</form>
+	    </script>
+	</div>
+
+</body>
+</html>

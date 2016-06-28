@@ -1,0 +1,27 @@
+.wrapper {
+    margin: 0 auto;
+    width: 50%;
+}
+.button-wrapper{
+    text-align: center;
+}
+.modal {
+    margin: 370px auto;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    padding: 0px;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bbb, 0 0 10px #bbb;
+    z-index: 10;
+    display: block;
+}
+.modal p {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
